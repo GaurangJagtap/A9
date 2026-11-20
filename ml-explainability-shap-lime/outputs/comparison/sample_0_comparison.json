@@ -1,0 +1,103 @@
+{
+    "sample_index": 0,
+    "true_label": 0,
+    "predicted_label": 0,
+    "predicted_probabilities": [
+        1.0,
+        0.0
+    ],
+    "top_shap_features": [
+        {
+            "feature": "worst concave points",
+            "shap_value": -0.09398981614295689,
+            "abs_shap": 0.09398981614295689
+        },
+        {
+            "feature": "worst area",
+            "shap_value": -0.08109447529100117,
+            "abs_shap": 0.08109447529100117
+        },
+        {
+            "feature": "worst radius",
+            "shap_value": -0.055731161709292765,
+            "abs_shap": 0.055731161709292765
+        },
+        {
+            "feature": "mean concave points",
+            "shap_value": -0.05514700419162043,
+            "abs_shap": 0.05514700419162043
+        },
+        {
+            "feature": "worst perimeter",
+            "shap_value": -0.05125068485207677,
+            "abs_shap": 0.05125068485207677
+        },
+        {
+            "feature": "mean perimeter",
+            "shap_value": -0.0417129154728027,
+            "abs_shap": 0.0417129154728027
+        },
+        {
+            "feature": "mean radius",
+            "shap_value": -0.038635100402550165,
+            "abs_shap": 0.038635100402550165
+        },
+        {
+            "feature": "mean concavity",
+            "shap_value": -0.03856386177097355,
+            "abs_shap": 0.03856386177097355
+        },
+        {
+            "feature": "mean area",
+            "shap_value": -0.035884645480532835,
+            "abs_shap": 0.035884645480532835
+        },
+        {
+            "feature": "area error",
+            "shap_value": -0.034684243565699505,
+            "abs_shap": 0.034684243565699505
+        }
+    ],
+    "top_lime_features": [
+        {
+            "rule": "worst concave points > 0.16",
+            "lime_weight": -0.14448784438359072
+        },
+        {
+            "rule": "worst area > 1033.50",
+            "lime_weight": -0.1393592230735801
+        },
+        {
+            "rule": "worst radius > 18.55",
+            "lime_weight": -0.10533701906498702
+        },
+        {
+            "rule": "worst perimeter > 124.95",
+            "lime_weight": -0.08020342563468157
+        },
+        {
+            "rule": "mean concave points > 0.07",
+            "lime_weight": -0.06054857099381563
+        },
+        {
+            "rule": "area error > 44.77",
+            "lime_weight": -0.05317608456748512
+        },
+        {
+            "rule": "worst texture > 29.37",
+            "lime_weight": -0.052368052558070054
+        },
+        {
+            "rule": "mean radius > 15.74",
+            "lime_weight": -0.04573258139171348
+        },
+        {
+            "rule": "mean perimeter > 103.70",
+            "lime_weight": -0.04531640602021331
+        },
+        {
+            "rule": "worst concavity > 0.39",
+            "lime_weight": -0.03948538870881889
+        }
+    ]
+}

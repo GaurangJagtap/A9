@@ -1,0 +1,9 @@
+Dimension,SHAP (SHapley Additive exPlanations),LIME (Local Interpretable Model-agnostic Explanations)
+Theoretical Foundation,Cooperative Game Theory (Shapley Values from 1953),Local surrogate modeling (Sparse linear regression with perturbations)
+Global vs Local,Both Global (aggregation of Shapley values) and Local,Strictly Local (explains one instance at a time)
+Axiomatic Guarantees,"Satisfies Efficiency, Symmetry, Dummy (Null), and Additivity",No formal theoretical axiomatic guarantees; heuristic
+Consistency,Provably consistent across models and transformations,May vary due to random sampling perturbations
+Computational Complexity,High for exact KernelSHAP; fast for TreeSHAP O(TLD^2),"Moderate, proportional to number of perturbation samples (e.g. 5000)"
+Feature Independence Assumption,Assumes feature independence unless conditional TreeSHAP is used,Perturbs features independently; can create out-of-distribution synthetic points
+Output Format,Additive feature attribution values in log-odds or probability margin,Linear regression weights on binned/discretized interval rules
+Best Use Case,"Auditing overall model behavior, regulatory compliance, fair feature attribution",Quick intuitive inspection of individual black-box decisions with threshold rules
